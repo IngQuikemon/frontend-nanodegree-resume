@@ -12,52 +12,60 @@ Cameron Pittman
 These are HTML strings. As part of the course, you'll be using JavaScript functions
 replace the %data% placeholder text you see in them.
 */
-var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<span>%data%</span><hr>';
+var HTMLheaderName = '<a class="navbar-brand" data-target="#myCarousel" data-slide-to="0" href="#">%data%</a>';
+var HTMLheaderRole = '<span class="small"> - %data%</span>';
 
-var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li>';
-var HTMLemail = '<li class="flex-item"><span class="orange-text">email</span><span class="white-text">%data%</span></li>';
-var HTMLtwitter = '<li class="flex-item"><span class="orange-text">twitter</span><span class="white-text">%data%</span></li>';
-var HTMLgithub = '<li class="flex-item"><span class="orange-text">github</span><span class="white-text">%data%</span></li>';
-var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span class="white-text">%data%</span></li>';
-var HTMLlocation = '<li class="flex-item"><span class="orange-text">location</span><span class="white-text">%data%</span></li>';
+var HTMLContactHolderImg = '<div id="bioImg" class="col-xs-4 col-md-3"></div>' ;
+var HTMLContactHolderContent = '<div id="bioContent" class="col-xs-12 col-sm-6 col-md-8"><div class="panel panel-default dark-gray"><div class="panel-heading"><ul id="topContacts" class="flex-box"></ul></div><div class="panel-body"></div></div></div>' ;
 
-var HTMLbioPic = '<img src="%data%" class="biopic">';
+var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="dark-gray">%data%</span></li>';
+var HTMLmobile = '<li><span class="orange-text">mobile</span><span class="contact-gray">%data%</span></li>';
+var HTMLemail = '<li><span class="orange-text">email</span><span class="contact-gray">%data%</span></li>';
+var HTMLtwitter = '<li><span class="orange-text">twitter</span><span class="contact-gray">%data%</span></li>';
+var HTMLgithub = '<li><span class="orange-text">github</span><span class="contact-gray">%data%</span></li>';
+var HTMLblog = '<li><span class="orange-text">blog</span><span class="contact-gray">%data%</span></li>';
+var HTMLlocation = '<li><span class="orange-text">location</span><span class="contact-gray">%data%</span></li>';
+
+var HTMLbioPic = '<div class="circle-bio-pic"><img src="%data%" class="biopic"></div>';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
 var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-box"></ul>';
-var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
+var HTMLskills = '<li class="flex-item"><span class="dark-gray">%data%</span></li>';
 
-var HTMLworkStart = '<div class="work-entry"></div>';
-var HTMLworkEmployer = '<a href="#">%data%';
-var HTMLworkTitle = ' - %data%</a>';
-var HTMLworkDates = '<div class="date-text">%data%</div>';
-var HTMLworkLocation = '<div class="location-text">%data%</div>';
+var HTMLworkStart = '<div class="work-entry col-xs-6 col-md-4"><div class="panel panel-default"><div class="panel-heading"></div><div class="panel-body"></div></div></div>';
+var HTMLworkEmployer = '<h2 class="panel-title">%data%';
+var HTMLworkTitle = '<br><small>%data%</small></h2>';
+var HTMLworkDates = '<div class="dark-gray">%data%</div>';
+var HTMLworkLocation = '<div class="dark-gray">%data%</div>';
 var HTMLworkDescription = '<p><br>%data%</p>';
 
-var HTMLprojectStart = '<div class="project-entry"></div>';
-var HTMLprojectTitle = '<a href="#">%data%</a>';
-var HTMLprojectDates = '<div class="date-text">%data%</div>';
+var HTMLprojectStart = '<div class="project-entry col-xs-6 col-md-4"><div class="panel panel-default"><div class="panel-heading"></div><div class="panel-body"></div></div></div>';
+var HTMLprojectTitle = '<h2 class="panel-title">%data%</h2>';
+var HTMLprojectDates = '<div class="dark-gray">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectImage = '<img src="%data%">';
 
-var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<a href="#">%data%';
-var HTMLschoolDegree = ' -- %data%</a>';
-var HTMLschoolDates = '<div class="date-text">%data%</div>';
-var HTMLschoolLocation = '<div class="location-text">%data%</div>';
+var HTMLschoolStart = '<div class="education-entry col-xs-6 col-md-4"><div class="panel panel-default"><div class="panel-heading"></div><div class="panel-body"></div></div></div>';
+var HTMLschoolName = '<h2 class="panel-title">%data%';
+var HTMLschoolDegree = '<br><small>%data%</small></h2>';
+var HTMLschoolDates = '<div class="dark-gray">%data%</div>';
+var HTMLschoolLocation = '<div class="dark-gray" >%data%</div>';
 var HTMLschoolMajor = '<em><br>Major: %data%</em>';
 
-var HTMLonlineClasses = '<h3>Online Classes</h3>';
-var HTMLonlineTitle = '<a href="#">%data%';
-var HTMLonlineSchool = ' - %data%</a>';
-var HTMLonlineDates = '<div class="date-text">%data%</div>';
+
+var HTMLonlineTitle = '<h2 class="panel-title">%data%';
+var HTMLonlineSchool = '<br><small>%data%</small></h2>';
+var HTMLonlineDates = '<div class="dark-gray">%data%</div>';
 var HTMLonlineURL = '<br><a href="#">%data%</a>';
 
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
 
+var HTMLSchoolIcon = '<div class="circle"><i class="material-icons md-48">&#xE80C;</i></div>';
+var HTMLWorkIcon = '<div class="circle"><i class="material-icons md-48">&#xE8F9;</i></div>';
+var HTMLProjectIcon = '<div class="circle"><i class="material-icons md-48">&#xE85D;</i></div>';
+var HTMLOnlineIcon = '<div class="circle"><i class="material-icons md-48">&#xE2BD;</i></div>';
+var HTMLBioPicIcon = '<div class="circle-bio-pic"><i class="material-icons md-250">&#xE853;</i></div>';
 
 /*
 The International Name challenge in Lesson 2 where you'll create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.
