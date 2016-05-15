@@ -3,7 +3,7 @@ var HTMLheaderName = '<a class="navbar-brand" data-target="#myCarousel" data-sli
 var HTMLheaderRole = '<span class="small"> - %data%</span>';
 
 var HTMLContactHolderImg = '<div id="bioImg" class=" col-md-3"></div>' ;
-var HTMLContactHolderContent = '<div id="bioContent" class="col-sm-6 col-md-8"><div class="panel panel-default dark-gray"><div class="panel-body"></div></div></div>' ;
+var HTMLContactHolderContent = '<div id="bioContent" class="col-md-8"><div class="panel panel-default dark-gray"><div class="panel-heading"><ul id="topContacts" class="flex-box"></ul></div><div class="panel-body"></div></div></div>' ;
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="dark-gray">%data%</span></li>';
 var HTMLmobile = '<li><span class="orange-text">mobile</span><span class="contact-gray">%data%</span></li>';
